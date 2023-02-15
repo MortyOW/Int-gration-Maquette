@@ -70,6 +70,8 @@ nav .r-side {
   justify-content: space-around;
   align-items: center;
   width: 250px;
+  color: black;
+  text-decoration: none;
 }
 .left-section .dashboard p {
   font-family: "Poppins", sans-serif;
@@ -91,6 +93,9 @@ nav .r-side {
   display: flex;
   align-items: center;
   gap: 20px;
+  text-decoration: none;
+  color: white;
+  opacity: 80%;
 }
 .left-section .options .opt p {
   font-family: "Poppins", sans-serif;

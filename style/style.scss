@@ -71,6 +71,8 @@ nav{
         justify-content: space-around;
         align-items: center;
         width: 250px;
+        color: black;
+        text-decoration: none;
         p{
             font-family: 'Poppins', sans-serif;
             color: black;
@@ -91,6 +93,9 @@ nav{
             display: flex;
             align-items: center;
             gap: 20px;
+            text-decoration: none;
+            color: white;
+            opacity: 80%;
             p{
                 font-family: 'Poppins', sans-serif;
                 font-size: 20px;
