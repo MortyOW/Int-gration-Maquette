@@ -110,7 +110,7 @@ nav{
 }
 
 .middle-section{
-    width: 900px;
+    width: 750px;
     padding-left: 50px;
     padding-top: 45px;
     color: white;
@@ -164,6 +164,7 @@ nav{
     }
     .middle-2{
         padding-top: 20px;
+
         .graph{
             width: 100%;
             height: 350px;
@@ -234,6 +235,42 @@ nav{
                     background-color: white;
                     color: black;
                 }
+            }
+        }
+    }
+}
+
+.right-section{
+    padding-left: 15px;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    .title{
+        padding-bottom: 15px;
+    }
+    .right-1{
+        gap: 10px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .transac{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            align-items: center;
+            font-family: 'Inter', sans-serif;
+            .status{
+                width: 120px;
+                h2{
+                    font-size: 15px;
+                }
+                h3{
+                    font-size: 15px;
+                }
+                display: flex;
+                flex-direction: column;
+                color: white;
             }
         }
     }

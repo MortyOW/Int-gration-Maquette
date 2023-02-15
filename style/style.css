@@ -107,7 +107,7 @@ nav .r-side {
   opacity: 80%;
 }
 .main-section .middle-section {
-  width: 900px;
+  width: 750px;
   padding-left: 50px;
   padding-top: 45px;
   color: white;
@@ -234,6 +234,41 @@ nav .r-side {
 .main-section .middle-section .middle-3 .crypto a:hover {
   background-color: white;
   color: black;
+}
+.main-section .right-section {
+  padding-left: 15px;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.main-section .right-section .title {
+  padding-bottom: 15px;
+}
+.main-section .right-section .right-1 {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.main-section .right-section .right-1 .transac {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+}
+.main-section .right-section .right-1 .transac .status {
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.main-section .right-section .right-1 .transac .status h2 {
+  font-size: 15px;
+}
+.main-section .right-section .right-1 .transac .status h3 {
+  font-size: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */
