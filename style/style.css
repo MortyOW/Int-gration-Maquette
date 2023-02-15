@@ -103,4 +103,17 @@ nav .r-side {
   opacity: 80%;
 }
 
+.middle-section {
+  color: white;
+}
+.middle-section .middle-1 .balance {
+  display: flex;
+  flex-direction: column;
+}
+.middle-section .middle-1 .balance .btc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /*# sourceMappingURL=style.css.map */

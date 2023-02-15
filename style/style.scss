@@ -104,3 +104,18 @@ nav{
         }
     }
 }
+
+.middle-section{
+    color: white;
+    .middle-1{
+        .balance{
+            display: flex;
+            flex-direction: column;
+            .btc{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
