@@ -117,11 +117,13 @@ nav{
         display: flex;
         flex-direction: row;
         gap: 20px;
+        align-items: center;
         .middle-options{
             display: flex;
+            height: 50px;
             background: #292727;
             border-radius: 17px;
-            padding: 8px 12px;
+            padding: 0.5em 1em;
             align-items: center;
             gap: 10px;
             .special-btn{
@@ -139,6 +141,7 @@ nav{
         .balance{
             display: flex;
             flex-direction: column;
+            gap: 10px;
             .txt-1{
                 font-weight: 900;
                 font-size: 16px;
@@ -157,6 +160,14 @@ nav{
                 }
             }
         }
+    }
+    .middle-2{
+        .graph{
+            background-color: red;
+        }
+    }
+    .middle-3{
+        
     }
 }
 }

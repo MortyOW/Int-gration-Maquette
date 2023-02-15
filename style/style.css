@@ -115,12 +115,14 @@ nav .r-side {
   display: flex;
   flex-direction: row;
   gap: 20px;
+  align-items: center;
 }
 .main-section .middle-section .middle-1 .middle-options {
   display: flex;
+  height: 50px;
   background: #292727;
   border-radius: 17px;
-  padding: 8px 12px;
+  padding: 0.5em 1em;
   align-items: center;
   gap: 10px;
 }
@@ -138,6 +140,7 @@ nav .r-side {
 .main-section .middle-section .middle-1 .balance {
   display: flex;
   flex-direction: column;
+  gap: 10px;
 }
 .main-section .middle-section .middle-1 .balance .txt-1 {
   font-weight: 900;
@@ -155,6 +158,9 @@ nav .r-side {
 }
 .main-section .middle-section .middle-1 .balance .btc img {
   padding-bottom: 4px;
+}
+.main-section .middle-section .middle-2 .graph {
+  background-color: red;
 }
 
 /*# sourceMappingURL=style.css.map */
