@@ -181,11 +181,12 @@ nav .r-side {
   font-weight: 700;
   font-size: 16px;
 }
-.main-section .middle-section .middle-3 .transactions h3 {
+.main-section .middle-section .middle-3 .transactions a {
   font-weight: 700;
   font-size: 16px;
   color: white;
   opacity: 70%;
+  text-decoration: none;
 }
 .main-section .middle-section .middle-3 .crypto {
   font-family: "Inter", sans-serif;
@@ -237,13 +238,13 @@ nav .r-side {
 }
 .main-section .right-section {
   padding-left: 15px;
-  padding-top: 50px;
+  padding-top: 35px;
   display: flex;
   flex-direction: column;
   color: white;
 }
 .main-section .right-section .title {
-  padding-bottom: 15px;
+  padding-bottom: 10px;
 }
 .main-section .right-section .right-1 {
   gap: 10px;
@@ -264,11 +265,55 @@ nav .r-side {
   flex-direction: column;
   color: white;
 }
+.main-section .right-section .right-1 .transac .status .green {
+  color: #4AD619;
+}
+.main-section .right-section .right-1 .transac .status .red {
+  color: #D61919;
+}
 .main-section .right-section .right-1 .transac .status h2 {
   font-size: 15px;
 }
 .main-section .right-section .right-1 .transac .status h3 {
   font-size: 15px;
+  opacity: 70%;
+}
+.main-section .right-section .right-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.main-section .right-section .right-2 .asset1 {
+  background: linear-gradient(98.73deg, #611D8D 35.75%, #2F7EC1 73.26%);
+  border-radius: 30px;
+  height: 140px;
+}
+.main-section .right-section .right-2 .asset1 .txt {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  color: white;
+}
+.main-section .right-section .right-2 .asset1 img {
+  width: 22%;
+  padding-left: 10px;
+  padding-top: 5px;
+}
+.main-section .right-section .right-2 .asset2 {
+  background: linear-gradient(99.56deg, #FAFF00 35.82%, #29ABE2 64.75%, rgba(255, 255, 255, 0.7) 91.33%);
+  border-radius: 30px;
+  height: 140px;
+}
+.main-section .right-section .right-2 .asset2 .txt {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  color: black;
+}
+.main-section .right-section .right-2 .asset2 img {
+  padding-top: 5px;
+  padding-left: 10px;
+  width: 20%;
 }
 
 /*# sourceMappingURL=style.css.map */

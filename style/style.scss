@@ -182,11 +182,12 @@ nav{
                 font-weight: 700;
                 font-size: 16px;
             }
-            h3{
+            a{
                 font-weight: 700;
                 font-size: 16px;
                 color: white;
                 opacity: 70%;
+                text-decoration: none;
             }
         }
         .crypto{
@@ -242,12 +243,12 @@ nav{
 
 .right-section{
     padding-left: 15px;
-    padding-top: 50px;
+    padding-top: 35px;
     display: flex;
     flex-direction: column;
     color: white;
     .title{
-        padding-bottom: 15px;
+        padding-bottom: 10px;
     }
     .right-1{
         gap: 10px;
@@ -262,15 +263,59 @@ nav{
             font-family: 'Inter', sans-serif;
             .status{
                 width: 120px;
+                .green{
+                    color: #4AD619;
+                }
+                .red{
+                    color: #D61919;
+                }
                 h2{
                     font-size: 15px;
                 }
                 h3{
                     font-size: 15px;
+                    opacity: 70%;
                 }
                 display: flex;
                 flex-direction: column;
                 color: white;
+            }
+        }
+    }
+    .right-2{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        .asset1{
+            background: linear-gradient(98.73deg, #611D8D 35.75%, #2F7EC1 73.26%);
+            border-radius: 30px;
+            height: 140px;
+            .txt{
+                display: flex;
+                flex-direction: column;
+                padding-left: 10px;
+                color: white;
+            }
+            img{
+                width: 22%;
+                padding-left: 10px;
+                padding-top: 5px;
+            }
+        }
+        .asset2{
+            background: linear-gradient(99.56deg, #FAFF00 35.82%, #29ABE2 64.75%, rgba(255, 255, 255, 0.7) 91.33%);
+            border-radius: 30px;
+            height: 140px;
+            .txt{
+                display: flex;
+                flex-direction: column;
+                padding-left: 10px;
+                color: black;
+            }
+            img{
+                padding-top: 5px;
+                padding-left: 10px;
+                width: 20%;
             }
         }
     }
