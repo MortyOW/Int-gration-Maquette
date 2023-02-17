@@ -304,6 +304,11 @@ nav .r-side {
   flex-direction: column;
   gap: 15px;
 }
+.main-section .right-section .right-2 .right-2resp {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
 .main-section .right-section .right-2 .asset1 {
   background: linear-gradient(98.73deg, #611D8D 35.75%, #2F7EC1 73.26%);
   border-radius: 30px;
@@ -388,6 +393,19 @@ nav .r-side {
   }
   .main-section .right-section {
     margin-left: 15vh;
+  }
+  .main-section .right-section .right-2 .right-2resp {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex-direction: row;
+    gap: 60px;
+  }
+  .main-section .right-section .right-2 .right-2resp .asset1 {
+    width: 60%;
+  }
+  .main-section .right-section .right-2 .right-2resp .asset2 {
+    width: 60%;
   }
 }
 

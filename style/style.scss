@@ -186,7 +186,9 @@ nav{
             height: 350px;
             border-radius: 30px;
             background-color: #303541;
+
         }
+
     }
     .middle-3{
         display: flex;
@@ -306,6 +308,11 @@ nav{
         }
     }
     .right-2{
+        .right-2resp{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
         display: flex;
         flex-direction: column;
         gap: 15px;
@@ -405,6 +412,21 @@ nav{
         }
         .right-section{
             margin-left: 15vh;
+            .right-2{
+                .right-2resp{
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: center;
+                flex-direction: row; 
+                gap: 60px;    
+                .asset1{
+                    width: 60%;
+                } 
+                .asset2{
+                    width: 60%;
+                }               
+                }
+            }
         }
     }
 }
