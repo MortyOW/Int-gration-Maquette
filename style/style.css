@@ -166,7 +166,8 @@ nav .r-side {
 .main-section .middle-section .middle-2 .graph {
   width: 100%;
   height: 350px;
-  background-color: red;
+  border-radius: 30px;
+  background-color: #303541;
 }
 .main-section .middle-section .middle-3 {
   display: flex;

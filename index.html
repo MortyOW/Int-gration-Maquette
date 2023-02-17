@@ -81,7 +81,7 @@
         </section>
         <section class="middle-2">
             <div class="graph">
-                <h1>Ceci va devenir un graph</h1>
+                <canvas id="myChart"></canvas>
             </div>
         </section>
         <section class="middle-3">
@@ -209,5 +209,43 @@
     </section>
 
 </section>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+        const ctx = document.getElementById('myChart');
+
+    new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ['5 nov', '6 nov', '7 nov', '8 nov', '9 nov', '10 nov', '11 nov', '12 nov', '13 nov', '14 nov', '15 nov', '16 nov'],
+        datasets: [{
+        label: 'Bitcoin',
+        data: [100, 600, 220, 400, 200, 400, 700, 380, 120, 210, 260, 400],
+        borderWidth: 4,
+        borderColor: '#d19a04'
+        },{
+            label: 'Ethereum',
+            data: [null, 200, 480, 650, 600, 400, 450, 550, 500, 600, 400],
+            borderWidth: 4,
+            borderColor: '#666258'
+        },{
+            label: 'Lite',
+            data: [null, null, null, null, 140, 400, 430, 220, 300, 400, 300, 450],
+            borderWidth: 4,
+            borderColor: '#029bb3'
+        }]
+    },
+    options: {
+        scales: {
+        y: {
+            beginAtZero: false
+        }
+        }
+    }
+    });
+
+</script>
+
 </body>
 </html>
