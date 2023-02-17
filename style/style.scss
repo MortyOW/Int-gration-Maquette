@@ -207,6 +207,11 @@ nav{
                 text-decoration: none;
             }
         }
+        .cryptos{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
         .crypto{
             font-family: 'Inter', sans-serif;
             background: rgba(32, 35, 43, 0.7);
@@ -254,6 +259,7 @@ nav{
                     color: black;
                 }
             }
+        }
         }
     }
 }
@@ -340,5 +346,65 @@ nav{
 }
 
 @media screen and (max-width: 390px ) {
+    nav{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding-left: 220px;
+        gap: 20px;
+        .nav-1{
+            padding-left: 20px;
+            p{
+                display: none;
+            }
+        }
+        .r-side{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    .main-section{
+        display: flex;
+        flex-wrap: wrap;
+        .left-section{
+            display: flex;
+            flex-direction: column;
+            padding-right: 50px;
+            .dashboard{
+                margin-left: 130px;
+            }
+            .options{
+                display: grid;
+                grid-template-rows: 1fr 1fr 1fr;
+                grid-template-columns: 20vh 20vh 20vh;
+                align-content: center;
+                .logout{
+                    display: none;
+                }
+            }
+        }
+        .middle-section{
+            .middle-3{
+                .cryptos{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    .crypto{
+                        display: flex;
+                        flex-wrap: wrap;
+                        max-width: 240px;
+                        .title{
 
+                        }
+                        .money{
+
+                        }
+                    }
+                }
+            }
+        }
+        .right-section{
+            margin-left: 15vh;
+        }
+    }
 }

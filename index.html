@@ -93,39 +93,41 @@
                 <h2>Recent Transactions</h2>
                 <a href="">See all coins</a>
             </div>
-            <div class="crypto">
-                <img src="assets/bitcoinlogo.png" alt="">
-                <div class="title">
-                    <h3>Bitcoin</h3>
-                    <p>BTC</p>
+            <div class="cryptos">
+                <div class="crypto">
+                    <img src="assets/bitcoinlogo.png" alt="">
+                    <div class="title">
+                        <h3>Bitcoin</h3>
+                        <p>BTC</p>
+                    </div>
+                    <div class="money">
+                        <h3>Market Cap</h3>
+                        <p class="blue">$40,243.70</p>
+                    </div>
+                    <div class="time">
+                        <h3>24h change</h3>
+                        <p class="green">+1,56</p>
+                    </div>
+                    <img src="assets/snake1.png" alt="">
+                    <a href="">Trade</a>
                 </div>
-                <div class="money">
-                    <h3>Market Cap</h3>
-                    <p class="blue">$40,243.70</p>
+                <div class="crypto">
+                    <img src="assets/ethicon.png" alt="">
+                    <div class="title">
+                        <h3>Ethereum</h3>
+                        <p>ETH</p>
+                    </div>
+                    <div class="money">
+                        <h3>Market Cap</h3>
+                        <p class="purple">$40,243.70</p>
+                    </div>
+                    <div class="time">
+                        <h3>24h change</h3>
+                        <p class="red">-1,56</p>
+                    </div>
+                    <img src="assets/snake2.png" alt="">
+                    <a href="">Trade</a>
                 </div>
-                <div class="time">
-                    <h3>24h change</h3>
-                    <p class="green">+1,56</p>
-                </div>
-                <img src="assets/snake1.png" alt="">
-                <a href="">Trade</a>
-            </div>
-            <div class="crypto">
-                <img src="assets/ethicon.png" alt="">
-                <div class="title">
-                    <h3>Ethereum</h3>
-                    <p>ETH</p>
-                </div>
-                <div class="money">
-                    <h3>Market Cap</h3>
-                    <p class="purple">$40,243.70</p>
-                </div>
-                <div class="time">
-                    <h3>24h change</h3>
-                    <p class="red">-1,56</p>
-                </div>
-                <img src="assets/snake2.png" alt="">
-                <a href="">Trade</a>
             </div>
         </section>
     </section>
@@ -243,6 +245,7 @@
         borderWidth: 4,
         borderColor: gradientStroke,
         borderCapStyle: 'round',
+        lineTension: 0.2,
         pointRadius: 0
         },{
             label: '',
@@ -250,6 +253,7 @@
             borderWidth: 4,
             borderColor: gradientStroke2,
             borderCapStyle: 'round',
+            lineTension: 0.2,
             pointRadius: 0
         },{
             label: '',
@@ -257,13 +261,12 @@
             borderWidth: 4,
             borderColor: gradientStroke3,
             borderCapStyle: 'round',
+            lineTension: 0.2,
             pointRadius: 0
         }]
     },
     options: {
-        legend: {
-            display: false
-        },
+        legend: false,
         scales: {
         y: {
             beginAtZero: false

@@ -204,7 +204,12 @@ nav .r-side {
   opacity: 70%;
   text-decoration: none;
 }
-.main-section .middle-section .middle-3 .crypto {
+.main-section .middle-section .middle-3 .cryptos {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.main-section .middle-section .middle-3 .cryptos .crypto {
   font-family: "Inter", sans-serif;
   background: rgba(32, 35, 43, 0.7);
   border-radius: 30px;
@@ -214,41 +219,41 @@ nav .r-side {
   justify-content: space-around;
   padding: 0.8em 1.6em;
 }
-.main-section .middle-section .middle-3 .crypto .title {
+.main-section .middle-section .middle-3 .cryptos .crypto .title {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-.main-section .middle-section .middle-3 .crypto .money {
+.main-section .middle-section .middle-3 .cryptos .crypto .money {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-.main-section .middle-section .middle-3 .crypto .money .blue {
+.main-section .middle-section .middle-3 .cryptos .crypto .money .blue {
   color: #1970D6;
 }
-.main-section .middle-section .middle-3 .crypto .money .purple {
+.main-section .middle-section .middle-3 .cryptos .crypto .money .purple {
   color: #6C1182;
 }
-.main-section .middle-section .middle-3 .crypto .time {
+.main-section .middle-section .middle-3 .cryptos .crypto .time {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-.main-section .middle-section .middle-3 .crypto .time .green {
+.main-section .middle-section .middle-3 .cryptos .crypto .time .green {
   color: #4AD619;
 }
-.main-section .middle-section .middle-3 .crypto .time .red {
+.main-section .middle-section .middle-3 .cryptos .crypto .time .red {
   color: #D61919;
 }
-.main-section .middle-section .middle-3 .crypto a {
+.main-section .middle-section .middle-3 .cryptos .crypto a {
   padding: 0.5em 1em;
   background-color: black;
   text-decoration: none;
   color: white;
   border-radius: 25px;
 }
-.main-section .middle-section .middle-3 .crypto a:hover {
+.main-section .middle-section .middle-3 .cryptos .crypto a:hover {
   background-color: white;
   color: black;
 }
@@ -330,6 +335,60 @@ nav .r-side {
   padding-top: 5px;
   padding-left: 10px;
   width: 20%;
+}
+
+@media screen and (max-width: 390px) {
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-left: 220px;
+    gap: 20px;
+  }
+  nav .nav-1 {
+    padding-left: 20px;
+  }
+  nav .nav-1 p {
+    display: none;
+  }
+  nav .r-side {
+    display: flex;
+    justify-content: space-between;
+  }
+  .main-section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .main-section .left-section {
+    display: flex;
+    flex-direction: column;
+    padding-right: 50px;
+  }
+  .main-section .left-section .dashboard {
+    margin-left: 130px;
+  }
+  .main-section .left-section .options {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 20vh 20vh 20vh;
+    align-content: center;
+  }
+  .main-section .left-section .options .logout {
+    display: none;
+  }
+  .main-section .middle-section .middle-3 .cryptos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .main-section .middle-section .middle-3 .cryptos .crypto {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 240px;
+  }
+  .main-section .right-section {
+    margin-left: 15vh;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
