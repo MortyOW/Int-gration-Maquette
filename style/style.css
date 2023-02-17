@@ -89,6 +89,21 @@ nav .r-side {
   padding-top: 30px;
   color: white;
 }
+.main-section .left-section .options .logout {
+  padding-top: 170px;
+  padding-left: 20px;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.main-section .left-section .options .logout a {
+  text-decoration: none;
+  color: white;
+  opacity: 70%;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
 .main-section .left-section .options .opt1 {
   padding-left: 4px;
 }

@@ -59,6 +59,10 @@
                 <img src="assets/questions.png" alt="">
                 <p>Help</p>
             </a>
+            <div class="logout">
+                <img src="assets/logout.png" alt="">
+                <a href="#">Log Out</a>
+            </div>
         </div>
     </section>
 
@@ -213,30 +217,53 @@
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 <script>
-        const ctx = document.getElementById('myChart');
+        const ctx = document.getElementById('myChart').getContext('2d');
+        var gradientStroke = ctx.createLinearGradient(0, 0, 0, 400);
+        gradientStroke.addColorStop(0, "rgba(100, 149, 237, 1)");  // light blue
+        gradientStroke.addColorStop(1, "rgba(128, 0, 128, 1)");  // purple
+
+        var gradientStroke2 = ctx.createLinearGradient(0, 0, 0, 400);
+        gradientStroke2.addColorStop(0, "#0e636e");  // light blue
+        gradientStroke2.addColorStop(1, "#1840c4");  // dark blue
+
+        var gradientStroke3 = ctx.createLinearGradient(0, 0, 0, 400);
+        gradientStroke3.addColorStop(0, "#094b7a");  // light blue
+        gradientStroke3.addColorStop(1, "#003154");  // dark blue
+
+
+
 
     new Chart(ctx, {
     type: 'line',
     data: {
         labels: ['5 nov', '6 nov', '7 nov', '8 nov', '9 nov', '10 nov', '11 nov', '12 nov', '13 nov', '14 nov', '15 nov', '16 nov'],
         datasets: [{
-        label: 'Bitcoin',
+        label: '',
         data: [100, 600, 220, 400, 200, 400, 700, 380, 120, 210, 260, 400],
         borderWidth: 4,
-        borderColor: '#d19a04'
+        borderColor: gradientStroke,
+        borderCapStyle: 'round',
+        pointRadius: 0
         },{
-            label: 'Ethereum',
+            label: '',
             data: [null, 200, 480, 650, 600, 400, 450, 550, 500, 600, 400],
             borderWidth: 4,
-            borderColor: '#666258'
+            borderColor: gradientStroke2,
+            borderCapStyle: 'round',
+            pointRadius: 0
         },{
-            label: 'Lite',
+            label: '',
             data: [null, null, null, null, 140, 400, 430, 220, 300, 400, 300, 450],
             borderWidth: 4,
-            borderColor: '#029bb3'
+            borderColor: gradientStroke3,
+            borderCapStyle: 'round',
+            pointRadius: 0
         }]
     },
     options: {
+        legend: {
+            display: false
+        },
         scales: {
         y: {
             beginAtZero: false
